@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "TwoViewController.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)pushNextView:(id)sender {
+    TwoViewController *twoVC = [[TwoViewController   alloc] init];
+    [self.navigationController pushViewController:twoVC animated:YES];
 }
 
 
